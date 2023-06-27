@@ -1,8 +1,8 @@
 export default function App() {
 
   return (
-    <div>
-      <p className="text-red-400">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+    <div className="container mx-auto">
+      <h1>dasdasdsadasd</h1>
     </div>
   );
 }

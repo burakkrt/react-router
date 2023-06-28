@@ -5,9 +5,9 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 // Font Awesome Icons Import for All Project
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {fab} from '@fortawesome/free-brands-svg-icons'
-import {faDownload, faHippo, faArrowRight, faUser, faClock} from '@fortawesome/free-solid-svg-icons'
+import {faDownload, faHippo, faArrowRight, faUser, faClock, faArrowUp} from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faDownload, faHippo, faArrowRight, faUser, faClock)
+library.add(fab, faDownload, faHippo, faArrowRight, faUser, faClock, faArrowUp)
 
 // Pages
 import Header from './pages/Header.jsx'
@@ -17,7 +17,6 @@ import Public404 from './pages/Public404.jsx'
 import BlogLayout from "./pages/Blog/index.jsx"
 import Blogs from './pages/Blog/Blogs.jsx'
 import ContextProvider from "./ContextAPI/ContextProvider.jsx"
-import Contact from "./pages/Contact.jsx"
 import PostDetails from "./pages/Blog/PostDetails.jsx";
 
 
@@ -31,7 +30,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                     <Route index={true} element={<Blogs/>}/>
                     <Route path="post-details/post/:postId" element={<PostDetails/>}/>
                 </Route>
-                <Route path="/contact" element={<Contact/>}/>
                 <Route path="*" element={<Public404/>}/>
             </Routes>
             <Footer/>

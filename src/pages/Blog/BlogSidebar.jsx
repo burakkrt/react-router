@@ -14,7 +14,8 @@ export default function BlogSidebar() {
                 {posts && posts.map(post => (
                     <li key={post.id}
                         className="text-lg bg-slate-700 text-slate-100 p-5 rounded mb-4 ">
-                        <Link to="/postid" className="hover:text-green-400">{post.title}</Link>
+                        <Link to={`/blog/post-details/post/${post.id}`}
+                              className="hover:text-green-400">{post.title}</Link>
                     </li>
                 ))}
             </ul>

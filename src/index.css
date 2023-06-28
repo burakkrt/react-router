@@ -2,10 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .minHeightFullScreen {
     min-height: calc(100dvh - (101px + 88px + 40px));
 }
 
 .heightFullScreen {
     height: calc(100dvh - (101px + 88px + 40px));
+}
+
+h1 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 3.25rem; /* 36px */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 3.25rem; /* 32px */
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0.75rem; /* 12px */
+    margin-bottom: 0.75rem; /* 12px */
+}
+
+.responsive-table {
+    margin: 1rem 0;
+}
+
+.responsive-table table th, td {
+    border: 1px solid black;
+    padding: 0.25rem;
+}
+
+pre {
+    background-color: rgb(241 245 249);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.pageUpBtn.active {
+    display: block;
+}
+
+
+.pageUpBtn.passive {
+    display: none;
 }

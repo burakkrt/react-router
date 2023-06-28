@@ -5,9 +5,9 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 // Font Awesome Icons Import for All Project
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {fab} from '@fortawesome/free-brands-svg-icons'
-import {faDownload, faHippo, faArrowRight, faUser} from '@fortawesome/free-solid-svg-icons'
+import {faDownload, faHippo, faArrowRight, faUser, faClock} from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faDownload, faHippo, faArrowRight, faUser)
+library.add(fab, faDownload, faHippo, faArrowRight, faUser, faClock)
 
 // Pages
 import Header from './pages/Header.jsx'

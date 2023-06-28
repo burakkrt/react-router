@@ -7,6 +7,8 @@ import Header from './pages/Header.jsx'
 import Welcome from './pages/Welcome.jsx'
 import Footer from './pages/Footer.jsx'
 import Public404 from './pages/Public404.jsx'
+import BlogLayout from "./pages/Blog/index.jsx"
+import Blogs from './pages/Blog/Blogs.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,6 +16,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Header/>
         <Routes>
             <Route path="/" element={<Welcome/>}/>
+            <Route path="/blog" element={<BlogLayout/>}>
+                <Route index={true} element={<Blogs/>}/>
+            </Route>
             <Route path="*" element={<Public404/>}/>
         </Routes>
         <Footer/>

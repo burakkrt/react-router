@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.minHeightFullScreen {
+    min-height: calc(100dvh - (101px + 88px + 40px));
+}

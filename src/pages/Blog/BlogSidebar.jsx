@@ -1,13 +1,23 @@
+import {useContext} from "react";
+import {Context} from "../../ContextAPI/ContextProvider.jsx"
+import {Link} from "react-router-dom";
+
 export default function BlogSidebar() {
 
+    const {posts} = useContext(Context);
+
     return (
-        <div className="flex flex-col h-full p-4">
-            <div className="flex-1">
-                Blog Sidebar Area
-            </div>
-            <div className="flex-1">
-                Blog Sidebar Area
-            </div>
+        <div>
+            <h1 className="text-2xl font-bold uppercase text-slate-700 tracking-widest border-b-2 pb-2">Other
+                Topics</h1>
+            <ul className="mt-5">
+                {posts && posts.map(post => (
+                    <li key={post.id}
+                        className="text-lg bg-slate-700 text-slate-100 p-5 rounded mb-4 ">
+                        <Link to="/postid" className="hover:text-green-400">{post.title}</Link>
+                    </li>
+                ))}
+            </ul>
         </div>
 
     );

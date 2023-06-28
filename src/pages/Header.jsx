@@ -4,7 +4,7 @@ export default function Header() {
 
     return (
         <header
-            className="container mx-auto flex flex-col lg:flex-row items-center justify-between border-b pb-5 mb-5 py-5 sticky top-0 bg-slate-100 shadow">
+            className="container mx-auto flex flex-col lg:flex-row items-center justify-between border-b pb-5 mb-5 py-5 sticky top-0 bg-slate-100 shadow z-10">
             <div className="grow-[1] text-3xl lg:text-6xl font-bold lg:ps-5">
                 <h1 className="">LOGO</h1>
             </div>

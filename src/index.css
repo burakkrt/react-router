@@ -5,3 +5,7 @@
 .minHeightFullScreen {
     min-height: calc(100dvh - (101px + 88px + 40px));
 }
+
+.heightFullScreen {
+    height: calc(100dvh - (101px + 88px + 40px));
+}

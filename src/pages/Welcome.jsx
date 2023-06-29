@@ -5,7 +5,7 @@ export default function Welcome() {
 
     return (
         <div className="container relative mx-auto heightFullScreen">
-            <img src="/assets/img/welcome-bg.jpg" alt="welcome image"
+            <img src="/assets/img/welcome-bg-min.jpg" alt="welcome image"
                  className="h-full w-full object-cover object-center"/>
             <div className="h-full w-full absolute bg-slate-500 top-0 start-0 mix-blend-multiply"></div>
             <div className="flex flex-col gap-8 absolute top-1/2 -translate-y-1/2  w-full text-center text-slate-100 ">

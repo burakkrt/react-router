@@ -10,7 +10,7 @@ export default function Blogs() {
 
     return (
         <div className="grid grid-cols-1 2xl:grid-cols-2 gap-5">
-            {posts.map(post => (
+            {posts && posts.map(post => (
                 <div className="flex flex-col gap-4 bg-slate-200 p-2 rounded shadow" key={post.id}>
                     <Link to={`post-details/post/${post.id}`}><img src={post.image} alt=""
                                                                    className="w-full h-64 object-cover object-center"/></Link>

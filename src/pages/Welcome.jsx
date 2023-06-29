@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 
 export default function Welcome() {
 
+
     return (
         <div className="container relative mx-auto heightFullScreen">
             <img src="/assets/img/welcome-bg-min.jpg" alt="welcome image"

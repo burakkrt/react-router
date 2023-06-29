@@ -6,13 +6,9 @@ import parse from 'html-react-parser'
 
 export default function PostDetails() {
 
-
     const {posts} = useContext(Context);
     const {postId} = useParams();
-    let post = {};
-    if (posts) {
-        post = posts.find(post => post.id === Number(postId))
-    }
+    let post = posts.find(post => post.id === Number(postId))
 
     const [pageUpState, setPageUpState] = useState(false)
     window.addEventListener("scroll", () => {

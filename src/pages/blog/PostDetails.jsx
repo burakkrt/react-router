@@ -1,13 +1,13 @@
 import {useParams} from 'react-router-dom'
-import {useContext, useState} from 'react'
-import {Context} from "../../ContextAPI/ContextProvider.jsx"
+import {Auth} from "../../contextapi/ContextProvider.jsx"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import parse from 'html-react-parser'
+import {useState} from "react";
 
 export default function PostDetails() {
 
 
-    const {posts} = useContext(Context);
+    const {posts} = Auth();
     const {postId} = useParams();
     let post = {};
     if (posts) {
@@ -19,7 +19,6 @@ export default function PostDetails() {
         if (scrollY > 200) {
             if (!pageUpState) setPageUpState(true);
         } else if (pageUpState) setPageUpState(false)
-        console.log(window.scrollY)
     })
 
     const pageUpHandler = () => {

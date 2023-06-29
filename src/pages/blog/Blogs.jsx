@@ -1,12 +1,11 @@
-import {Context} from '../../ContextAPI/ContextProvider.jsx'
-import {useContext} from 'react'
+import {Auth} from '../../contextapi/ContextProvider.jsx'
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 export default function Blogs() {
 
-    const {posts} = useContext(Context);
+    const {posts} = Auth();
 
     return (
         <div className="grid grid-cols-1 2xl:grid-cols-2 gap-5">

@@ -1,14 +1,20 @@
-import {createContext, useEffect, useState} from 'react'
+import {createContext, useContext, useEffect, useState} from 'react'
 
 export const Context = createContext({});
+export const Auth = () => {
+    return useContext(Context);
+}
 
 // eslint-disable-next-line react/prop-types
 export default function ContextProvider({children}) {
 
     const [posts, setPosts] = useState();
+    const [login, setLogin] = useState(false);
 
     const data = {
-        posts
+        posts,
+        login,
+        setLogin
     }
 
     useEffect(() => {

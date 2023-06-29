@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {Context} from "../../ContextAPI/ContextProvider.jsx"
+import {Context} from "../../contextapi/ContextProvider.jsx"
 import {Link} from "react-router-dom";
 
 export default function BlogSidebar() {

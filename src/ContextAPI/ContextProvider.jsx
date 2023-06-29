@@ -12,7 +12,7 @@ export default function ContextProvider({children}) {
     }
 
     useEffect(() => {
-        fetch("/fakeBlogs.json")
+        fetch("/assets/fakeBlogs.json")
             .then(response => response.json())
             .then(data => {
                 setPosts(data.posts);

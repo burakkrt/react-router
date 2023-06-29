@@ -1,6 +1,7 @@
 import {Auth} from '../contextapi/ContextProvider.jsx'
 import {Navigate} from 'react-router-dom';
 
+// eslint-disable-next-line react/prop-types
 export default function PrivateRoute({children}) {
 
     const {login} = Auth();

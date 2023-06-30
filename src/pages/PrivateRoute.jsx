@@ -7,6 +7,6 @@ export default function PrivateRoute({children}) {
     const {login} = Auth();
 
     if (!login) {
-        return <Navigate to="/auth/login" state={{return_url: '/blog'}}/>
+        return <Navigate to="/auth/login" state={{return_url: '/blog'}} replace={true}/>
     } else return children;
 }

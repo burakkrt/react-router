@@ -6,7 +6,6 @@ const Login = () => {
 
     const {setLogin} = Auth();
     const navigate = useNavigate();
-    const location = useLocation();
 
     const loginHandler = (e) => {
         setLogin(login => !login)

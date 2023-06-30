@@ -6,11 +6,9 @@ import {useNavigate} from "react-router-dom";
 export default function Header() {
 
     const {login, setLogin} = Auth();
-    const navigate = useNavigate();
 
     const logoutHandler = () => {
         setLogin(!login)
-        navigate('/')
     }
 
     return (

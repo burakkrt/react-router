@@ -1,5 +1,5 @@
 import {Auth} from '../contextapi/ContextProvider.jsx'
-import {useNavigate, useLocation} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Login = () => {
@@ -12,6 +12,8 @@ const Login = () => {
         navigate('/create-post')
         e.preventDefault();
     }
+
+    console.log(location)
 
     return (
         <div className="h-screen grid place-content-center bg-sky-700">
@@ -33,7 +35,7 @@ const Login = () => {
                 <div className="flex flex-col gap-2 lg:flex-row lg:gap-0 justify-around mt-5">
                     <button
                         className="bg-sky-200 text-slate-700 px-2 py-1 rounded hover:bg-sky-300 duration-200 lg:w-1/3"
-                        onClick={() => navigate(location.state?.return_url)}>I will just read
+                        onClick={() => navigate('/')}>I will just read
                     </button>
                     <button
                         className="bg-green-300 text-slate-700 px-2 py-1 rounded hover:bg-green-400 duration-200 lg:w-1/3"

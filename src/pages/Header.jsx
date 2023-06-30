@@ -1,7 +1,6 @@
 import {Link, NavLink} from 'react-router-dom'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Auth} from '../contextapi/ContextProvider.jsx'
-import {useNavigate} from "react-router-dom";
 
 export default function Header() {
 
